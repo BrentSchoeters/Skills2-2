@@ -1,4 +1,4 @@
-name: Test Runner
+name: Build Docker Image
 
 on:
   push:
@@ -6,9 +6,17 @@ on:
       - main
 
 jobs:
-  test:
+  build:
     runs-on: self-hosted
 
     steps:
-      - name: Test runner
-        run: echo "Runner werkt"
+      - uses: actions/checkout@v4
+
+      - name: Login to GHCR
+        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u BrentSchoeters --password-stdin
+
+      - name: Build image
+        run: docker build -t ghcr.io/brentschoeters/skills2-2:${GITHUB_SHA} .
+
+      - name: Push image
+        run: docker push ghcr.io/brentschoeters/skills2-2:${GITHUB_SHA}
