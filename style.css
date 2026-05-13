@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #0b6623;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #0b6623;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #094f1c;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.info div {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info h3 {
+    color: #0b6623;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
