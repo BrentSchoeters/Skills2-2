@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNova Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      height: 400px;
+      background: linear-gradient(to right, #111827, #1e3a8a);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      background: #60a5fa;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3b82f6;
+    }
+
+    .products {
+      padding: 60px 50px;
+    }
+
+    .products h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #2563eb;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechNova</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Over Ons</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>De nieuwste tech gadgets</h2>
+
+    <p>
+      Ontdek premium laptops, smartphones en accessoires
+      aan scherpe prijzen met snelle levering.
+    </p>
+
+    <button class="btn">Shop Nu</button>
+  </section>
+
+  <section class="products">
+    <h3>Populaire Producten</h3>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://picsum.photos/400/250?1">
+        <h4>Gaming Laptop Pro</h4>
+        <p>Krachtige RTX gaming laptop voor professionals.</p>
+        <div class="price">€1499</div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/250?2">
+        <h4>Smartphone X12</h4>
+        <p>Ultra snelle smartphone met AI camera systeem.</p>
+        <div class="price">€899</div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/250?3">
+        <h4>Wireless Headset</h4>
+        <p>Noise cancelling headset met premium audio.</p>
+        <div class="price">€249</div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 TechNova Store — Powered by Kubernetes & ArgoCD
+  </footer>
+
+</body>
+</html>
